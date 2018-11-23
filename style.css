@@ -7,11 +7,7 @@ html {
   font-size: 100%;
 }
 
-@media only screen and (min-width: 1920px) {
-  html {
-    font-size: 170%;
-  }
-}
+
 
 body {
     font-family: 'Montserrat'
@@ -145,6 +141,27 @@ h1 span:not(:first-child) {
     background-size: cover;
     background-position: center center; 
 }
+
+@media only screen and (min-width: 1920px) {
+  html {
+    font-size: 170%;
+  }
+
+  .image-vertical-home-after {
+    position: absolute;
+    background-color: transparent;
+    width: 38.2%;
+    height: 28.14%;
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center; 
+}
+}
+
 .video {
     /* transform: scale(.6);
     transform: translateX(-40%); */
