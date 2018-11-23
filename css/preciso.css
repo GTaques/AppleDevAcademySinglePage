@@ -1,0 +1,105 @@
+.preciso {
+    height: 95vh;
+    background-color: black;
+}
+
+.preciso-container {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-image: url('../assets/tent.JPG');
+
+    /* linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.616)
+      ) */
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+}
+
+.preciso-assets {
+    flex: 3;
+}
+
+.tent-image {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.preciso-typography {
+    display: block;
+    flex: 2;
+    margin-right: 5rem;
+    border-radius: 2px;
+    border: 10px solid white;
+    box-shadow: 0rem 1rem 3rem rgba(black, 0.1);
+
+    height: 70%;
+    width: 30%;
+    /* background-color: rgba(255, 255, 255, 0.6); */
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0.7), 
+        rgba(255, 255, 255, 0.616));
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 3rem;
+    transform: skew(-14deg);
+}
+
+.preciso-typography > * {
+    transform: skew(14deg);
+}
+
+.preciso-header {
+    
+    padding: .5rem;
+    border: 2px solid black;
+    margin-top: 0rem;
+    text-align: center;
+}
+
+.preciso-header > * {
+        transform: skewY(20deg);
+}
+
+.preciso-technical {
+    margin-top: 3rem;
+}
+.preciso-subjective {
+    margin-top: 3rem;
+}
+
+.arrow-up {
+  position: relative;
+  display: inline-block;
+  margin-top: 1rem;
+  left: 10%;
+  max-width: 15%;
+  animation: bounce 0.5s cubic-bezier(.5,0.05,1,.5);
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  transform: translateX(-60%);
+  transform: rotate(180deg) skew(14deg);
+}
+
+.github {
+  position: relative;
+  display: inline-block;
+  margin-top: 1rem;
+  left: 40%;
+  max-width: 15%;
+  /* animation: bounce 0.5s cubic-bezier(.5,0.05,1,.5);
+  animation-direction: alternate;
+  animation-iteration-count: infinite; */
+  transform: translateX(-60%);
+  transform: skew(14deg);
+}
+
+@keyframes bounce {
+  from { transform: translateY(-2%);     }
+  to   { transform: translateY(7%); }
+}
